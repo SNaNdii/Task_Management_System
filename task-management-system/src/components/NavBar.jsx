@@ -14,7 +14,15 @@ export const NavBar = () => {
                 <NavButton>Features</NavButton>
                 <NavButton>For Teams</NavButton>
                 <Menu>
-                    <MenuButton as={NavButton} rightIcon={<ChevronDownIcon />}>Resources</MenuButton>
+                    <MenuButton as={NavButton} rightIcon={<ChevronDownIcon />}>Resources
+                    <MenuList>
+                        <MenuItem>Download</MenuItem>
+                        <MenuItem>Create a Copy</MenuItem>
+                        <MenuItem>Mark as Draft</MenuItem>
+                        <MenuItem>Delete</MenuItem>
+                        <MenuItem>Attend a Workshop</MenuItem>
+                    </MenuList>
+                    </MenuButton>
                 </Menu>
                 <NavButton>Pricing</NavButton>
                 <NavButton>Login</NavButton>
