@@ -1,7 +1,7 @@
-import { Container } from '@chakra-ui/react';
+import { Box} from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const Cntainer = styled(Container)`
+export const TextBox = styled(Box)`
     border: 1px solid black;
-    width: 100%;
+    width: 46%;
 `
