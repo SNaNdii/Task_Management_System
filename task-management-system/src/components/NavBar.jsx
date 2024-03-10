@@ -1,13 +1,13 @@
-import { Spacer } from "@chakra-ui/react"
+import { Box, Spacer } from "@chakra-ui/react"
 import {Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider} from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { CommonButton } from "./styledComponent/CommonButton"
-import { NavBox , NavButton , Logo } from "./styledComponent/NavBox"
+import { NavBox , NavButton , Logo, MainNav } from "./styledComponent/NavBox"
 
 export const NavBar = () => {
 
     return (
-        <div>
+        <MainNav>
             <NavBox>
                 <Logo src="https://ucarecdn.com/d891cfcc-c46d-437f-b176-c5325e93ca55/-/format/auto/-/progressive/yes/-/preview/480x480/"/>
                 <Spacer/>
@@ -28,6 +28,6 @@ export const NavBar = () => {
                 <NavButton>Login</NavButton>
                 <CommonButton>Start for free</CommonButton>
             </NavBox>
-        </div>
+        </MainNav>
     )
 }

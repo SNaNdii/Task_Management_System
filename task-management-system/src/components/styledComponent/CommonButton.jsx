@@ -2,9 +2,11 @@ import styled from '@emotion/styled';
 import {Button} from '@chakra-ui/react';
 
 export const CommonButton = styled(Button)`
-    background-color: #f15847;
+    background-color: #e64836;
     color: white;
+    font-weight: 500;
+    font-size: 17   px;
     &:hover{
-        background-color: #e24331;
+        background-color: #c43121;
     }
 `
