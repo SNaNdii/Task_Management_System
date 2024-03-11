@@ -1,8 +1,9 @@
 import { Box, Image, Text} from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const MainBox = styled(Box)`
-    margin-top: 10px;
+export const MidBox = styled(Box)`
+    width: 80%;
+    margin-left: 5%;
 `
 export const TextBox = styled(Box)`
     width: 49%;

@@ -1,4 +1,4 @@
-import { NavBar } from "../NavBar"
+import { NavBar } from "../../NavBar"
 import { AddTaskDemo } from "./AddTaskDemo"
 import { HomeTop } from "./HomeTop"
 

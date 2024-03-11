@@ -1,6 +1,6 @@
 import { Center, Text } from "@chakra-ui/react"
-import { MainBox, GreyText, TextBox, ImgOrange } from "../styledComponent/HomeComp"
-import { CommonButton } from "../styledComponent/CommonButton"
+import { MainBox, GreyText, TextBox, ImgOrange } from "../../styledComponent/HomeComp"
+import { CommonButton } from "../../styledComponent/CommonButton"
 
 export const HomeTop = () => {
 

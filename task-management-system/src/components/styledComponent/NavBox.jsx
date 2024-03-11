@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 import {Box, Button, Flex, Image} from '@chakra-ui/react';
 
 export const NavBox = styled(Flex)`
-    height: 60px;
+    height: auto;
     gap: 20px;
     align-items: center;
+    padding: 10px;
 `
 
 export const NavButton = styled(Button)`
@@ -15,8 +16,8 @@ export const NavButton = styled(Button)`
 `
 
 export const Logo = styled(Image)`
-    height: 40px;
-    width: 10%;
+    height: 38px;
+    width: 12%;
 `
 
 export const MainNav = styled(Box)`
