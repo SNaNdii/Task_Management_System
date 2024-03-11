@@ -27,7 +27,14 @@ export const AddTaskDemo = () => {
                                 </MidBox>
                         </TextBox>
                         <Spacer/>
-                        <TextBox>ndcdmbm</TextBox>
+                        <TextBox>
+                                <MidBox>
+                                        <Text fontSize='xl' as='b' color='#f14b39' >Clear your mind</Text>
+                                        <br/>
+                                        <Text fontSize='5xl' as='b'>The fastest way to get tasks out of your head.</Text>
+                                        <GreyText>Type just about anything into the task field and Todoist’s one-of-its-kind natural language recognition will instantly fill your to-do list.</GreyText>
+                                </MidBox>
+                        </TextBox>
                 </Wrap>
                 {/* </NavBox> */}
         </>
