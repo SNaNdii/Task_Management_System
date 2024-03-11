@@ -19,3 +19,4 @@ export const ImgOrange = styled(Image)`
     margin-top: -40%;
     opacity: 0.3;
 `
+// export const 
