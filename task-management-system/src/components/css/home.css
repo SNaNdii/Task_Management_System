@@ -1,0 +1,9 @@
+.bgImage{
+    background-image: url("https://pronatec.blog.br/wp-content/uploads/2021/11/todoist-app.jpg");
+    width: 50%;
+    opacity: 0.3;
+    height: 1200px;
+}
+.main{
+    margin-top: -15%;
+}
