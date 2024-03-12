@@ -2,8 +2,9 @@
     background-image: url("https://pronatec.blog.br/wp-content/uploads/2021/11/todoist-app.jpg");
     width: 50%;
     opacity: 0.3;
-    height: 1200px;
+    height: 1250px;
+    margin-top: -7%;
 }
 .main{
-    margin-top: -15%;
+    margin-top: -5%;
 }

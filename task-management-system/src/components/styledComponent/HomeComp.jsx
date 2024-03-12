@@ -1,11 +1,11 @@
-import { Box, Image, Text} from '@chakra-ui/react';
+import { Box, GridItem, Image, Text} from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
 export const MidBox = styled(Box)`
-    width: 80%;
-    margin-left: 5%;
+    width: 85%;
+    margin-left: 7%;
     margin-bottom: 30%;
-    margin-top: 15%;
+    margin-top: 3%;
 `
 export const TextBox = styled(Box)`
     width: 49%;
@@ -28,4 +28,13 @@ export const ImgBg = styled(Image)`
     /* margin-left: -10%; */
     width: 60%;
 `
-// export const 
+export const GridIt = styled(GridItem)`
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 200px;
+`
+export const GridImg = styled(Image)`
+    height: 60%;
+    margin:  0% 0% 10% 15%;
+`
