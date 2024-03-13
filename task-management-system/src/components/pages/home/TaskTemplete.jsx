@@ -6,6 +6,7 @@ export const TaskTemplate = () => {
         <div className='bgImage'>
             
         </div>
-        {/* <ImgBg src=""></ImgBg> */}
+
+        
     </>
 }
