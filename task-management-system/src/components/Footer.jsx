@@ -4,7 +4,7 @@ import { GreyText, TextBox } from "./styledComponent/HomeComp"
 import { CommonButton } from "./styledComponent/CommonButton"
 import {FaFacebook , FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
 import { ListIt , ListMain } from "./styledComponent/FooterComp"
-import { NavButton } from "./styledComponent/NavBox"
+import { NavButton } from "./styledComponent/NavComp"
 
 export const Footer = () => {
     return <div className="footer">

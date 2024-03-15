@@ -2,7 +2,7 @@ import { Box, Spacer } from "@chakra-ui/react"
 import {Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider} from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { CommonButton } from "./styledComponent/CommonButton"
-import { NavBox , NavButton , Logo, MainNav } from "./styledComponent/NavBox"
+import { NavBox , NavButton , Logo, MainNav } from "./styledComponent/NavComp"
 
 export const NavBar = () => {
 
