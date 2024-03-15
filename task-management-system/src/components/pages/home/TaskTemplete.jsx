@@ -5,7 +5,7 @@ export const TaskTemplate = () => {
     return <>
         <div className='bgImage'>
             <></>
-            <CommonButton>Start for free</CommonButton>
+            {/* <CommonButton>Start for free</CommonButton> */}
         </div>
 
         
