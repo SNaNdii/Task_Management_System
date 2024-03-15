@@ -1,9 +1,10 @@
-import { Box, Center, Heading, Divider, Flex, Grid, GridItem, Icon, Image, List, ListItem, Spacer, Text } from "@chakra-ui/react"
+import { Box, Center, Divider, Flex, Icon, Spacer, Text } from "@chakra-ui/react"
 import "./css/footer.css"
 import { GreyText, TextBox } from "./styledComponent/HomeComp"
 import { CommonButton } from "./styledComponent/CommonButton"
 import {FaFacebook , FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
 import { ListIt , ListMain } from "./styledComponent/FooterComp"
+import { NavButton } from "./styledComponent/NavBox"
 
 export const Footer = () => {
     return <div className="footer">
@@ -26,31 +27,31 @@ export const Footer = () => {
             <Spacer/>
 
             <ListMain>
-                <ListIt> <Text as='b'>Features</Text> </ListIt>
-                <ListIt>How it works</ListIt>
-                <ListIt>For Team</ListIt>
-                <ListIt>Pricing</ListIt>
-                <ListIt>Templates</ListIt>
+                <ListIt> <NavButton><Text as='b'>Features</Text></NavButton> </ListIt>
+                <ListIt><NavButton>How it works</NavButton></ListIt>
+                <ListIt><NavButton>For Team</NavButton></ListIt>
+                <ListIt><NavButton>Pricing</NavButton></ListIt>
+                <ListIt><NavButton>Templates</NavButton></ListIt>
             </ListMain>
             <Spacer/>
             <ListMain>
-                <ListIt> <Text as='b'>Resources</Text> </ListIt>
-                <ListIt>Download Apps</ListIt>
-                <ListIt>Help Center</ListIt>
-                <ListIt>Productivity Methods</ListIt>
-                <ListIt>Integrations</ListIt>
-                <ListIt>Channel Partners</ListIt>
-                <ListIt>Developer API</ListIt>
-                <ListIt>Status</ListIt>
+                <ListIt><NavButton><Text as='b'>Resources</Text></NavButton></ListIt>
+                <ListIt><NavButton>Download Apps</NavButton></ListIt>
+                <ListIt><NavButton>Help Center</NavButton></ListIt>
+                <ListIt><NavButton>Productivity Methods</NavButton></ListIt>
+                <ListIt><NavButton>Integrations</NavButton></ListIt>
+                <ListIt><NavButton>Channel Partners</NavButton></ListIt>
+                <ListIt><NavButton>Developer API</NavButton></ListIt>
+                <ListIt><NavButton>Status</NavButton></ListIt>
             </ListMain>
             <Spacer/>
             <ListMain>
-                <ListIt> <Text as='b'>Company</Text> </ListIt>
-                <ListIt>About Us</ListIt>
-                <ListIt>Careers</ListIt>
-                <ListIt>Inspiration Hub</ListIt>
-                <ListIt>Press</ListIt>
-                <ListIt>Twist</ListIt>
+                <ListIt><NavButton><Text as='b'>Company</Text></NavButton></ListIt>
+                <ListIt><NavButton>About Us</NavButton></ListIt>
+                <ListIt><NavButton>Careers</NavButton></ListIt>
+                <ListIt><NavButton>Inspiration Hub</NavButton></ListIt>
+                <ListIt><NavButton>Press</NavButton></ListIt>
+                <ListIt><NavButton>Twist</NavButton></ListIt>
             </ListMain>
             <Spacer/>
             <ListMain>

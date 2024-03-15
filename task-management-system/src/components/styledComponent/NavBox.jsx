@@ -9,9 +9,9 @@ export const NavBox = styled(Flex)`
 `
 
 export const NavButton = styled(Button)`
-    background-color: white;
+    background-color: transparent;
     &:hover {
-        background-color: #b9b9b9;
+        background-color: #d4d4d4;
     }
 `
 
