@@ -1,6 +1,6 @@
 .footer{
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(250, 173, 173));
-    height: 600px;
+    height: auto;
     width: 100%;
     margin-top: -20%;
 }
