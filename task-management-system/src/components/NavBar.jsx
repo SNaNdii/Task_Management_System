@@ -1,8 +1,9 @@
-import { Box, Spacer } from "@chakra-ui/react"
+import { Box, Link, Spacer } from "@chakra-ui/react"
 import {Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider} from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { CommonButton } from "./styledComponent/CommonButton"
 import { NavBox , NavButton , Logo, MainNav } from "./styledComponent/NavComp"
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -25,7 +26,7 @@ export const NavBar = () => {
                     </MenuButton>
                 </Menu>
                 <NavButton>Pricing</NavButton>
-                <NavButton>Login</NavButton>
+              <NavLink to="/login"><NavButton>Login</NavButton></NavLink>
                 <CommonButton>Start for free</CommonButton>
             </NavBox>
         </MainNav>
