@@ -26,7 +26,7 @@ export const NavBar = () => {
                     </MenuButton>
                 </Menu>
                 <NavButton>Pricing</NavButton>
-              <NavLink to="/login"><NavButton>Login</NavButton></NavLink>
+                <Link to='/login'><NavButton>Login</NavButton></Link>
                 <CommonButton>Start for free</CommonButton>
             </NavBox>
         </MainNav>

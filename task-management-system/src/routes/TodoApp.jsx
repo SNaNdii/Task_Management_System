@@ -7,6 +7,7 @@ export const TodoApp = () => {
     return <>
         <Home/>
         <Routes>
+            <Route path='/' element={<Home/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
         </Routes>
     </>
