@@ -7,6 +7,11 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
 
+    const name = [
+        {title: "Home", to: "/home"},
+        {title: "Login", to: "/login"}
+    ]
+
     return (
         <MainNav>
             <NavBox>
