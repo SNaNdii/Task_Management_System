@@ -1,14 +1,13 @@
 import { Button, Center, Text} from '@chakra-ui/react'
 import { ImgOrange, TextBox } from '../../styledComponent/HomeComp'
-import { CommonButton } from '../../styledComponent/CommonButton'
 // import '../../css/login.css'
-import { LoginBox , LoginInp} from '../../styledComponent/LoginComp'
+import { LoginBox } from '../../styledComponent/LoginComp'
 import { Signup } from '../signup/Signup'
 import { useState } from 'react'
+import { LoginLogic } from './LoginLogic'
 
 export const Login = () => {
     const[isModal , setModal] = useState(false);
-
     const signupModal = () => {
         setModal(!isModal);
     }
@@ -20,15 +19,13 @@ return(
     <Center >
         <TextBox m={20}>
             <LoginBox className='loginBox'>
-                <Text fontSize='xl'>Enter your Username</Text>
-                <LoginInp placeholder='Enter username here'/>
-                <Text fontSize='xl'>Enter your Password</Text>
-                <LoginInp placeholder='Enter password here'/>
-                <CommonButton>login</CommonButton>
+                
+                <LoginLogic/>
+
                 <Text>Don't have any Account ?</Text>
                 <Button onClick={signupModal}>Sign In</Button>
             </LoginBox>
-            
+
             {isModal ? getModal() : console.log("Modal close")}
         </TextBox>
     </Center>
