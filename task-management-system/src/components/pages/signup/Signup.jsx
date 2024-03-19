@@ -1,4 +1,4 @@
-import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure, Button} from '@chakra-ui/react'
+import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure, Button, Text} from '@chakra-ui/react'
 import { CommonButton } from '../../styledComponent/CommonButton'
 import { LoginInp , LoginBox } from '../../styledComponent/LoginComp'
 
@@ -7,18 +7,29 @@ export const Signup = () => {
   return (
     <>
       <Button onClick={onOpen}>Sign In</Button>
-
+        
       <Modal isOpen={isOpen} onClose={onClose}>
+        {console.log("bchjbh j hj   hj bhj")}
         <ModalOverlay />
 
         <ModalContent>
-            
+
           <ModalHeader>Enter your details here</ModalHeader>
           <ModalCloseButton />
 
           <ModalBody>
             <LoginBox>
-                <LoginInp placeholder='Enter here'/>
+                <Text>Enter your name</Text>
+                <LoginInp placeholder='Enter here' type='text'/>
+
+                <Text>Enter your email id</Text>
+                <LoginInp placeholder='Enter here' type='email'/>
+
+                <Text>Set your username</Text>
+                <LoginInp placeholder='Enter here' type='text'/>
+
+                <Text>Set your password</Text>
+                <LoginInp placeholder='Enter here' type='text'/>
             </LoginBox>
           </ModalBody>
 
