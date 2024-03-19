@@ -1,9 +1,9 @@
-import { Center, Text } from '@chakra-ui/react'
+import { Center, Text} from '@chakra-ui/react'
 import { ImgOrange, TextBox } from '../../styledComponent/HomeComp'
 import { CommonButton } from '../../styledComponent/CommonButton'
 // import '../../css/login.css'
-import { NavButton } from '../../styledComponent/NavComp'
 import { LoginBox , LoginInp} from '../../styledComponent/LoginComp'
+import { Signup } from '../signup/Signup'
 
 export const Login = () => {
 return(
@@ -16,8 +16,7 @@ return(
                 <Text fontSize='xl'>Enter your Password</Text>
                 <LoginInp placeholder='Enter password here'/>
                 <CommonButton>login</CommonButton>
-                <Text>Don't have any Account ? <NavButton>Sign Up</NavButton></Text>
-                
+                <Text>Don't have any Account ? <Signup/> </Text>
             </LoginBox>
         </TextBox>
     </Center>
