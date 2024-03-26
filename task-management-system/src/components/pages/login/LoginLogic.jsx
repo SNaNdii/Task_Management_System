@@ -7,8 +7,8 @@ import { login } from '../../../redux/loginRedux/action'
 
 export const LoginLogic = () => {
     const dispatch = useDispatch()
-    const[username , setUsername] = useState('');
-    const[password , setpassword] = useState('');
+    const[username , setUsername] = useState("njddnjd");
+    const[password , setpassword] = useState("");
 
     const handleChange = () => {
         dispatch(login(username , password));
