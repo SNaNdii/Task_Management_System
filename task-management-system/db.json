@@ -1,11 +1,53 @@
 {
-    "users": [
-      {
-        "name": "Nandita",
-        "email": "nandita@gmail.com",
-        "num": "nandi12345",
-        "age": "34",
-        "id": 1
-      }
-    ]
-  }
+  "todo": [
+    {
+      "name": "Learn JavaScript",
+      "time": "12 days",
+      "remove": "Yes",
+      "status": "Completed",
+      "id": 1
+    },
+    {
+      "name": "",
+      "time": "12 hours",
+      "rem": "Not Remove",
+      "status": "Not Completed",
+      "id": 2
+    },
+    {
+      "name": "Learn HTML",
+      "time": "12 hours",
+      "rem": "Not Remove",
+      "status": "Not Completed",
+      "id": 3
+    },
+    {
+      "name": "Learn qqqqqqqqqqq",
+      "time": "12 hours",
+      "rem": "Not Remove",
+      "status": "Not Completed",
+      "id": 4
+    },
+    {
+      "name": "",
+      "time": "",
+      "rem": "",
+      "status": "",
+      "id": 5
+    },
+    {
+      "name": "vivek",
+      "time": "4 baje ",
+      "rem": "jmfedg",
+      "status": "gerhethh",
+      "id": 6
+    },
+    {
+      "name": "prst",
+      "time": "4 baje ",
+      "rem": "jmfedg",
+      "status": "gerhethh",
+      "id": 7
+    }
+  ]
+}

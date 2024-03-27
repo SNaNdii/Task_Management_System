@@ -1,14 +1,16 @@
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure, Button, Text} from '@chakra-ui/react'
 import { CommonButton } from '../../styledComponent/CommonButton'
 import { LoginInp , LoginBox } from '../../styledComponent/LoginComp'
+import { useState } from 'react'
 
-export const Signup = () => {
+export const Signup = (Open) => {
+    const[close, setClose] = useState(Open);
     const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button onClick={onOpen}>Sign In</Button>
+      {/* <Button onClick={onOpen}>Sign In</Button> */}
         
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={close} onClose={() => setClose(false)}>
         {console.log("bchjbh j hj   hj bhj")}
         <ModalOverlay />
 
