@@ -5,7 +5,6 @@ import { LoginBox } from '../../styledComponent/LoginComp'
 import { Signup } from '../signup/Signup'
 import { useState } from 'react'
 import { LoginLogic } from './LoginLogic'
-import { TodoLogic } from '../todos/TodoLogic'
 
 export const Login = () => {
     const[isModal , setModal] = useState(false);
@@ -19,7 +18,6 @@ return(
     <div>
     <Center >
         <TextBox m={20}>
-            <TodoLogic/>
             <LoginBox className='loginBox'>
                 
                 <LoginLogic/>
