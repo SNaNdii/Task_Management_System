@@ -6,48 +6,43 @@
       "remove": "Yes",
       "status": "Completed",
       "id": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "Nandita",
+      "username": "nandi",
+      "email": "singhnandita73@gmail.com",
+      "password": "nandi@12345",
+      "id": 1
     },
     {
       "name": "",
-      "time": "12 hours",
-      "rem": "Not Remove",
-      "status": "Not Completed",
+      "email": "",
+      "username": "",
+      "password": "",
       "id": 2
     },
     {
-      "name": "Learn HTML",
-      "time": "12 hours",
-      "rem": "Not Remove",
-      "status": "Not Completed",
+      "name": "Tarun",
+      "email": "tarun@gmail.com",
+      "username": "tannu",
+      "password": "tannu@12345",
       "id": 3
     },
     {
-      "name": "Learn qqqqqqqqqqq",
-      "time": "12 hours",
-      "rem": "Not Remove",
-      "status": "Not Completed",
+      "name": "Tarun",
+      "email": "tarun@gmail.com",
+      "username": "tannu",
+      "password": "tannu@12345",
       "id": 4
     },
     {
-      "name": "",
-      "time": "",
-      "rem": "",
-      "status": "",
+      "name": "Tannu",
+      "email": "tannu@gmail.com",
+      "username": "tt",
+      "password": "tannu@12345",
       "id": 5
-    },
-    {
-      "name": "vivek",
-      "time": "4 baje ",
-      "rem": "jmfedg",
-      "status": "gerhethh",
-      "id": 6
-    },
-    {
-      "name": "prst",
-      "time": "4 baje ",
-      "rem": "jmfedg",
-      "status": "gerhethh",
-      "id": 7
     }
   ]
 }

@@ -12,7 +12,7 @@ export const NavBar = () => {
         <Logo src="https://ucarecdn.com/d891cfcc-c46d-437f-b176-c5325e93ca55/-/format/auto/-/progressive/yes/-/preview/480x480/" />
         <Spacer />
         <NavButton>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </NavButton>
         <NavButton>For Teams</NavButton>
         <Menu>
