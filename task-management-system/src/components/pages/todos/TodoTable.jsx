@@ -1,7 +1,29 @@
 import { Table, Thead, Tbody, Tr, Th, Td, Button } from '@chakra-ui/react';
+import React, { useState, useEffect } from "react";
 
 
 export const TodoTable = () => {
+
+    const[task , setTask] = useState([]);
+    const[statusText , setStatusText] = useState(false);
+    console.log("Todo Table Start");
+    console.log(task);
+
+    useEffect(() => {
+        getTask();
+    }, []);
+    
+    const getTask = async () => {
+        try{
+            const res = await fetch("http://localhost:8080/todo")
+            const data = await res.json();
+            console.log(data);
+            setTask(data);
+        }catch(err){
+            console.log(err);
+        }
+    }
+
     return (
         <Table variant="striped" colorScheme="teal">
             <Thead>
@@ -14,13 +36,19 @@ export const TodoTable = () => {
                 </Tr>
             </Thead>
             <Tbody>
-                <Tr>
-                    <Td>1</Td>
-                    <Td>Learn react</Td>
-                    <Td>15 days</Td>
-                    <Td><Button>Remove</Button></Td>
-                    <Td><Button>Not Completed</Button></Td>
-                </Tr>
+                {
+                    task.map( (e) => {
+                        return (
+                            <Tr>
+                                <Td> {e.id} </Td>
+                                <Td>{e.name}</Td>
+                                <Td>{e.time}</Td>
+                                <Td><Button>{statusText ? "Remove" : "Can't Remove"}</Button></Td>
+                                <Td><Button onClick={() => setStatusText(!statusText)}>{statusText ? "Completed" : "Not Completed"}</Button></Td>
+                            </Tr>
+                        )
+                    })
+                }
             </Tbody>
         </Table>
     )

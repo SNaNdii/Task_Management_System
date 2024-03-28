@@ -15,9 +15,7 @@ export const Todo = () => {
 
   const [todo, setTodo] = useState({
     name: "",
-    time: "",
-    rem: "",
-    status: "",
+    time: ""
   });
 
   const todoHandleAdd = (todo) => {
@@ -25,9 +23,7 @@ export const Todo = () => {
     setData(todo)
     setTodo({
       name: "",
-      time: "",
-      rem: "",
-      status: "",
+      time: ""
     });
   };
 
@@ -47,66 +43,15 @@ export const Todo = () => {
       <Center>
         <TextBox m={20}>
           <LoginBox>
-            {/* <LoginInp
-              placeholder="name"
-              value={text}
-              onChange={(e) => (e.target.value)}
-            />
-            <LoginInp
-              placeholder="time"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-            />
-            <LoginInp
-              placeholder="remove"
-              value={removeOrNot}
-              onChange={(e) => setRemove(e.target.value)}
-            />
-            <LoginInp
-              placeholder="status"
-              value={status}
-              onChange={(e) => setStatus(e.target.value)}
-            /> */}
 
-            <LoginInp
-              placeholder="name"
-              value={todo.name}
-              onChange={(e) => setTodo({ ...todo, name: e.target.value })}
-            />
-            <LoginInp
-              placeholder="time"
-              value={todo.time}
-              onChange={(e) => setTodo({ ...todo, time: e.target.value })}
-            />
-            <LoginInp
-              placeholder="remove"
-              value={todo.rem}
-              onChange={(e) => setTodo({ ...todo, rem: e.target.value })}
-            />
-            <LoginInp   
-              placeholder="status"
-              value={todo.status}
-              onChange={(e) => setTodo({ ...todo, status: e.target.value })}
-            />
+            <LoginInp placeholder="Enter task here" value={todo.name} onChange={(e) => setTodo({ ...todo, name: e.target.value })} />
+            <LoginInp placeholder="Enter estimated time here" value={todo.time} onChange={(e) => setTodo({ ...todo, time: e.target.value })} />
 
             <CommonButton onClick={()=>{todoHandleAdd(todo)}}>Submit task</CommonButton>
           </LoginBox>
         </TextBox>
       </Center>
-      {/* {
-                todos.map((e , i) =>{
-                    return (
-                        <div>
-                            <Text key={i}>{e.name}</Text>
-                            <Text key={i}>{e.time}</Text>
-                            <Text key={i}>{e.rem}</Text>
-                            <Text key={i}>{e.status}</Text>
-                        </div>
-                        
-                    )
-                    // return <Text key={i}>{e.task}</Text>
-                })
-            } */}
+      
       <TodoTable />
     </div>
   );

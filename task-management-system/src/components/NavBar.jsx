@@ -14,7 +14,9 @@ export const NavBar = () => {
         <NavButton>
           <Link to="/">Home</Link>
         </NavButton>
-        <NavButton>For Teams</NavButton>
+        <NavButton>
+          <Link to="/tasks">Task</Link>
+        </NavButton>
         <Menu>
           <MenuButton as={NavButton} rightIcon={<ChevronDownIcon />}>
             Resources

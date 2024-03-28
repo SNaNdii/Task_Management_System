@@ -13,7 +13,7 @@ export const TodoApp = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/signup' element={<Signup/>}></Route>
-            <Route path='/todo' element={<Todo/>}></Route>
+            <Route path='/tasks' element={<Todo/>}></Route>
         </Routes>
     </>
 }

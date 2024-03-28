@@ -3,9 +3,12 @@
     {
       "name": "Learn JavaScript",
       "time": "12 days",
-      "remove": "Yes",
-      "status": "Completed",
       "id": 1
+    },
+    {
+      "name": "Learn HTML",
+      "time": "10 days",
+      "id": 2
     }
   ],
   "users": [
