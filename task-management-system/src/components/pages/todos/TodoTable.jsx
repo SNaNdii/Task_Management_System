@@ -1,13 +1,16 @@
 import { Table, Thead, Tbody, Tr, Th, Td, Button } from '@chakra-ui/react';
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { saveTodos } from '../../../redux/todoRedux/action';
 
 
 export const TodoTable = () => {
+    const dispatch = useDispatch();
+    const task = useSelector((store) => store.todos.todos);
+    // const[task , setTask] = useState([]);
+    
 
-    const[task , setTask] = useState([]);
-    const[statusText , setStatusText] = useState(false);
     console.log("Todo Table Start");
-    console.log(task);
 
     useEffect(() => {
         getTask();
@@ -18,7 +21,8 @@ export const TodoTable = () => {
             const res = await fetch("http://localhost:8080/todo")
             const data = await res.json();
             console.log(data);
-            setTask(data);
+            // setTask(data);
+            dispatch(saveTodos(data));
         }catch(err){
             console.log(err);
         }
@@ -37,19 +41,27 @@ export const TodoTable = () => {
             </Thead>
             <Tbody>
                 {
-                    task.map( (e) => {
+                    task.map( (e, i) => {
                         return (
-                            <Tr>
-                                <Td> {e.id} </Td>
-                                <Td>{e.name}</Td>
-                                <Td>{e.time}</Td>
-                                <Td><Button>{statusText ? "Remove" : "Can't Remove"}</Button></Td>
-                                <Td><Button onClick={() => setStatusText(!statusText)}>{statusText ? "Completed" : "Not Completed"}</Button></Td>
-                            </Tr>
+                            <TableRow e={e} i={i}/>
                         )
                     })
                 }
             </Tbody>
         </Table>
+    )
+}
+
+function TableRow({e, i}){
+    const[statusText , setStatusText] = useState(false);
+    return (
+        <Tr>
+            <Td> {i+1} </Td>
+            <Td>{e.name}</Td>
+            <Td>{e.time}</Td>
+            <Td><Button>{statusText ? "Remove" : "Can't Remove"}</Button></Td>
+            <Td><Button onClick={() => setStatusText(!statusText)}>{statusText ? "Completed" : "Not Completed"}</Button></Td>
+        </Tr>
+
     )
 }

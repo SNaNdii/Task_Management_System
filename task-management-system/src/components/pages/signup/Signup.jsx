@@ -13,41 +13,38 @@ import { CommonButton } from "../../styledComponent/CommonButton";
 import { LoginInp, LoginBox } from "../../styledComponent/LoginComp";
 import { useState } from "react";
 
-export const Signup = (Open) => {
-  const [close, setClose] = useState(Open);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+export const Signup = () => {
+  const [close, setClose] = useState(true);
 
-  const[name , setName] = useState("");
-  const[email, setEmail] = useState("");
-  const[userId , setUserId] = useState("");
-  const[pass , setPass] = useState("");
-
-  const[user , setUser] = useState({
+  const[userDetails , setUserDetails] = useState({
     name : "",
     email : "",
     username : "",
     password : ""
   })
 
-  const userAdd = () => {
-    setUser({
-      name : name,
-      email : email,
-      username : userId,
-      password : pass
+  const handleUserDetails = (field , value) => {
+    setUserDetails((prev) => {
+      return {...prev , [field] : value}
     })
-    setData();
   }
 
-  const setData = () => {
+  const saveData = () => {
     fetch("http://localhost:8080/users" , {
       method : "POST",
       headers : {
         "content-type" : "application/json"
       },
-      body : JSON.stringify(user)
+      body : JSON.stringify(userDetails)
     });
-    alert("Signup Successfully")
+    alert("Signup Successfully");
+    setClose(false);
+    setUserDetails({
+      name : "",
+      email : "",
+      username : "",
+      password : ""
+    });
   }
 
   return (
@@ -62,21 +59,21 @@ export const Signup = (Open) => {
           <ModalBody>
             <LoginBox>
               <Text>Enter your name</Text>
-              <LoginInp placeholder="Enter here" value={name} onChange={(e) => setName(e.target.value)}/>
+              <LoginInp placeholder="Enter here" value={userDetails.name} onChange={(e) => handleUserDetails("name" , e.target.value)}/>
 
               <Text>Enter your email id</Text>
-              <LoginInp placeholder="Enter here" value={email} onChange={(e) => setEmail(e.target.value)}/>
+              <LoginInp placeholder="Enter here" value={userDetails.email} onChange={(e) => handleUserDetails("email" , e.target.value)}/>
 
               <Text>Set your username</Text>
-              <LoginInp placeholder="Enter here" value={userId} onChange={(e) => setUserId(e.target.value)}/>
+              <LoginInp placeholder="Enter here" value={userDetails.userId} onChange={(e) => handleUserDetails("username" , e.target.value)}/>
 
               <Text>Set your password</Text>
-              <LoginInp placeholder="Enter here" value={pass} onChange={(e) => setPass(e.target.value)}/>
+              <LoginInp placeholder="Enter here" value={userDetails.pass} onChange={(e) => handleUserDetails("password" , e.target.value)}/>
             </LoginBox>
           </ModalBody>
 
           <ModalFooter>
-            <CommonButton onClose={() => setClose(false)} onClick={userAdd} >Sign In</CommonButton>
+            <CommonButton onClick={saveData} >Sign In</CommonButton>
           </ModalFooter>
         </ModalContent>
       </Modal>

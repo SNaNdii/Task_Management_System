@@ -11,8 +11,6 @@ import { TodoTable } from "./TodoTable";
 export const Todo = () => {
   const dispatch = useDispatch();
 
-  const todos = useSelector((store) => store.todos.todos);
-
   const [todo, setTodo] = useState({
     name: "",
     time: ""

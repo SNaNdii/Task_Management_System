@@ -14,7 +14,7 @@ export const Login = () => {
   };
 
   const getModal = () => {
-    return <Signup onOpen={true}/>;
+    return <Signup/>;
   };
 
   return (
