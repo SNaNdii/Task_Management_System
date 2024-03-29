@@ -1,6 +1,6 @@
 import { Button, Center, Text } from "@chakra-ui/react";
 import { ImgOrange, TextBox } from "../../styledComponent/HomeComp";
-// import '../../css/login.css'
+import '../../css/login.css'
 import { LoginBox } from "../../styledComponent/LoginComp";
 import { Signup } from "../signup/Signup";
 import { useState } from "react";
@@ -18,7 +18,7 @@ export const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login">
       <Center>
         <TextBox m={20}>
           <LoginBox className="loginBox">

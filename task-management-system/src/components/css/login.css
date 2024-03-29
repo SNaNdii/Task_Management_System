@@ -1,0 +1,21 @@
+.login{
+    background-image: linear-gradient(to top , white,  rgba(247, 185, 185, 0.932) , white, rgba(247, 185, 185, 0.932) , white, rgba(247, 185, 185, 0.932) , white, rgba(247, 185, 185, 0.932) , white, rgba(247, 185, 185, 0.932) , white);
+    
+}
+
+.loginBox{
+    background-color: white;
+    animation: scaleBox 1s infinite alternate;
+}
+
+@keyframes scaleBox {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+}
+.loginBox:hover {
+    animation-play-state: paused;
+  }
