@@ -30,32 +30,11 @@
       "id": 1
     },
     {
-      "name": "",
-      "email": "",
-      "username": "",
-      "password": "",
-      "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "username": "",
-      "password": "",
-      "id": 3
-    },
-    {
       "name": "panku",
       "email": "panku@",
       "username": "panku",
       "password": "panku12345",
       "id": 4
-    },
-    {
-      "name": "panku",
-      "email": "panku@",
-      "username": "panku",
-      "password": "c xn cnx",
-      "id": 5
     },
     {
       "name": "tttttttttt",
@@ -65,13 +44,6 @@
       "id": 6
     },
     {
-      "name": "",
-      "email": "",
-      "username": "",
-      "password": "",
-      "id": 7
-    },
-    {
       "name": "gggggggg",
       "email": "gggggggg",
       "username": "gggggggggggg",
@@ -79,11 +51,18 @@
       "id": 8
     },
     {
-      "name": "a",
-      "email": "a",
-      "username": "a",
-      "password": "a",
-      "id": 9
+      "name": "Nandita",
+      "email": "nn@gmail.com",
+      "username": "nandi",
+      "password": "nandi1234",
+      "id": 10
+    },
+    {
+      "name": "tarun",
+      "email": "tarun",
+      "username": "tarun",
+      "password": "tarun",
+      "id": 11
     }
   ]
 }
